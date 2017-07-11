@@ -22,9 +22,16 @@ $(document).ready(function() {
         	case "mammut":
         		$("#articulo").html("<option value='mmt-hard'>HARDWARE</option><option value='mmt-soft'>SOFTWARE</option><option value='mmt-calzado'>CALZADO</option>");
         		break;
+            
+            case "nordica":
+                $("#articulo").html("<option value='nor-esqui'>ESQUI</option><option value='nor-baston'>BASTONES</option><option value='nor-bota'>BOTAS</option><option value='nor-acc'>ACCESORIOS</option>");
+                break;
 
             case "xbionic":
                 $("#articulo").html("<option value='xbn-ropa'>ROPA</option>");
+                break;
+
+            default:
                 break;
         }
     });

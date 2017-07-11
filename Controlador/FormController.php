@@ -17,7 +17,49 @@ switch ($p) {
 
 	case 'informacion':
 		
-		include ('Vista/parte1.php');
+		if (isset($_POST['Continuar'])) {
+			switch ($_POST['Marca']) {
+				case "scott_bici":
+					echo 'Pagina de ' .$_POST['Marca'];
+	        		//include ('Vista/');
+	        		break;
+
+	            case "scott_running":
+	            	echo 'Pagina de ' .$_POST['Marca'];
+	                //include ('Vista/');
+	                break;
+
+	        	case "kswiss":
+	        		echo 'Pagina de ' .$_POST['Marca'];
+	        		//include ('Vista/');
+	        		break;
+
+	        	case "adidas":
+	        		echo 'Pagina de ' .$_POST['Marca'];
+	        		//include ('Vista/');
+	        		break;
+
+	        	case "mammut":
+	        		echo 'Pagina de ' .$_POST['Marca'];
+	        		//include ('Vista/');
+	        		break;
+	            
+	            case "nordica":
+	                echo 'Pagina de ' .$_POST['Marca'];
+	        		//include ('Vista/');
+	                break;
+
+	            case "xbionic":
+	                echo 'Pagina de ' .$_POST['Marca'];
+	        		//include ('Vista/');
+	                break;
+				
+				default:					
+					break;
+			}
+
+		}
+		
 		break;
 
 	case 'parte2':
